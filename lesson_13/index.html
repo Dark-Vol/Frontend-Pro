@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="orderDetailsForm">
+        <label for="fullName">ПІБ</label>
+        <input type="text" id="fullName" name="fullName" required>
+    
+        <label for="city">Місто</label>
+        <select id="city" name="city" required>
+            <option value="">Оберіть місто</option>
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Odessa">Одеса</option>
+            <option value="Kharkiv">Харків</option>
+            <option value="Dnipro">Дніпро</option>
+            <option value="Zaporizhzhia">Запоріжжя</option>
+            <option value="Kherson">Херсон</option>
+            <option value="Vinnytsia">Вінниця</option>
+            <option value="Cherkasy">Черкаси</option>
+            <option value="Poltava">Полтава</option>
+        </select>
+    
+        <label for="branch">Склад Нової пошти</label>
+        <input type="text" id="branch" name="branch" required>
+    
+        <label for="payment">Тип оплати</label>
+        <select id="payment" name="payment" required>
+            <option value="cash_on_delivery">Накладений платіж</option>
+            <option value="bank_transfer">Оплата на рахунок</option>
+        </select>
+    
+        <label for="quantity">Кількість товару</label>
+        <input type="number" id="quantity" name="quantity" required>
+    
+        <label for="comment">Коментар до замовлення</label>
+        <textarea id="comment" name="comment"></textarea>
+    
+        <button type="submit">Підтвердити замовлення</button>
+    </form>
+    <div id="orderSummary"></div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>
