@@ -1,5 +1,3 @@
-// Файл: app.js
-
 document.addEventListener('DOMContentLoaded', () => {
     showCategories();
     addMyOrdersButton();
