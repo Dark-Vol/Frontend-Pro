@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Погодний Віджет</title>
+</head>
+
+<body>
+  <div class="widget">
+    <div class="date" id="date"></div>
+    <div class="time" id="time">--:--</div>
+    <div class="info">
+      <div><strong>Темп:</strong> <span id="temp">--</span>°C</div>
+      <div><strong>Відчувається:</strong> <span id="feels">--</span>°C</div>
+      <div><strong>Вологість:</strong> <span id="humidity">--</span>%</div>
+      <div><strong>Тиск:</strong> <span id="pressure">--</span> hPa</div>
+      <div><strong>Вітер:</strong> <span id="wind">--</span></div>
+    </div>
+    <div><strong><span id="desc">--</span></strong></div>
+    <img id="icon" class="weather-icon" src="" alt="icon">
+    <div>
+      <button class="refresh" onclick="fetchWeather()">🔄 Оновити</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
