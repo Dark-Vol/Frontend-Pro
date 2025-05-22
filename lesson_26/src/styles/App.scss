@@ -1,0 +1,41 @@
+.app {
+  padding: 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  &.btn-blue {
+    background-color: #3b82f6;
+  }
+
+  &.btn-green {
+    background-color: #10b981;
+  }
+
+  &.btn-red {
+    background-color: #ef4444;
+  }
+
+  &.btn-yellow {
+    background-color: #facc15;
+    color: black;
+  }
+
+  &.btn-gray {
+    background-color: #6b7280;
+  }
+}
