@@ -1,0 +1,28 @@
+.app {
+  padding: 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+
+  &.dark {
+    background-color: #121212;
+    color: #f3f3f3;
+  }
+
+  &.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 0.5rem;
+  }
+}
