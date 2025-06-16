@@ -1,0 +1,9 @@
+.nav-button {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+
+  &.active {
+    font-weight: bold;
+  }
+}
